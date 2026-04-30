@@ -1,41 +1,112 @@
-/* Reflection Health Glassmorphism Styles */
-.reflection-hero {
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  padding: 80px 20px;
-  text-align: center;
-  color: #f8fafc;
-  font-family: 'Inter', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflection Health | The Future of Wellness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 50px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            margin-bottom: 30px;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 15px; font-weight: 600; text-align: center; }
+        .subtitle { text-align: center; font-size: 1.1rem; opacity: 0.8; margin-bottom: 40px; }
+        
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-size: 0.9rem; opacity: 0.8; }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(0, 0, 0, 0.2);
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        input:focus, select:focus { outline: none; border-color: #38bdf8; }
+        option { background: #1e293b; color: white; }
+        
+        button {
+            width: 100%;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+            margin-top: 10px;
+        }
+        button:hover { transform: scale(1.02); background: #7dd3fc; }
+        
+        .founders-note {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            border-radius: 16px;
+            border-left: 4px solid #38bdf8;
+        }
+        .founders-note h3 { margin-bottom: 15px; color: #38bdf8; }
+        .founders-note p { line-height: 1.6; opacity: 0.9; margin-bottom: 15px; }
+        
+        .legal-footer {
+            text-align: center;
+            font-size: 0.75rem;
+            opacity: 0.5;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 600px) {
+            .glass-card { padding: 30px 20px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
 
-.glass-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 24px;
-  padding: 40px;
-  max-width: 600px;
-  margin: 0 auto;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
-
-.reflection-btn {
-  background: #38bdf8;
-  color: #0f172a;
-  padding: 12px 24px;
-  border-radius: 12px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
-  transition: transform 0.2s;
-}
-
-.reflection-btn:hover { transform: scale(1.05); }
-
-.legal-footer {
-  font-size: 12px;
-  opacity: 0.6;
-  margin-top: 40px;
-}
-
+<div class="container">
+    <div class="glass-card">
+        <h1>The Future of Your Health is in Your Mirror</h1>
+        <p class="subtitle">Join the movement to reflect on your potential and see the person you want to become.</p>
+        
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="intent">I am interested as a...</label>
+                <select id="intent" name="intent" required>
+                    <option value="consumer
